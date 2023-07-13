@@ -6,9 +6,10 @@ type alphanumeric = string | number;
 
 function add(a: alphanumeric, b: alphanumeric) {
     if (typeof a === 'string' && typeof b === 'string') {
-        return true;
+        console.log('both values are string type')
     } else {
-        return false;
+        console.log('one or both values are not of string type');
     }
 }
 
+add("test", 5);
