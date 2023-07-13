@@ -27,7 +27,7 @@ let itemOne = addColorToItem({ type: "plane", model: "A380" });
 
 /*
     When using generics like below, we can pass in any object no matter
-    what keys it has, and still add a color to it
+    what keys it has (but it has to be an extension of the Plane interface), and still add a color to it
 */
 
 const addColorToItemAgain = <T extends Plane>(item: T) => {
